@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+    <script src="jquery.js"></script>
+    <!--<link rel="stylesheet" href="haier.css">-->
+    <!--<script src="haier.js"></script>-->
+<style>
+    /*重置*/
+    *{font-family:"微软雅黑";color:#999999;font-size:14px;}
+    body,h1,h2,p{margin:0;}
+    h1,h2{font-weight:normal;}
+    img{display:block;border:none;}
+    li{list-style:none;}
+    ul{margin:0;padding:0;}
+
+    /*顶部*/
+    .top_box1{background-color:white;height:60px;}
+    .top_box2{width:1236px;margin-left:auto;margin-right:auto;height:60px;}
+    .logo{float:left; padding-top:19px; padding-bottom:20px;padding-right:25px;}
+    .nav1{float:left;}
+    .nav1a{float:left;line-height:60px;padding-left:23px;padding-right:23px; text-decoration:none;
+        color:#333333;font-weight:bold; position:relative;}
+    .nav2{float:right;}
+    .nav2 *{float:left;}
+    .box01{color:#666;width:130px;text-align:center;padding-top:20px;padding-bottom:20px;border-left:solid 1px #e5e5e5;border-right:solid 1px #e5e5e5;}
+    .box02{width:66px;padding-top:21px;padding-left:21px;padding-bottom:19px;}
+    .box03{width:100px;padding-top:20px;padding-left:24px;padding-bottom:20px;border-left:solid 1px #e5e5e5;border-right:solid 1px #e5e5e5;}
+    .box03 span{ padding-left:7px;color:black;}
+    .box03 *{float:left;}
+    .box04{width:66px;background-color:#005aab;padding-top:20px;padding-left:29px;padding-bottom:20px;}
+    .navbox2{position:absolute;top:60px;left:-1px;z-index: 999;}
+
+
+    .navbox2>li{width:166px;height:40px;border-left:solid 1px #e5e5e5;border-right:solid 1px #e5e5e5;
+        border-bottom:solid 1px #e5e5e5;background-color:#f2f2f2;padding-left:20px;
+        line-height:40px;font-weight: normal;}
+    .navbox2>li:hover a{ color:#005aab;}
+    .navbox2>li a:hover{ color:#32beff;}
+
+    .navbox2 .navbox2_li_active{ background: #ffffff;border-right:solid 1px #ffffff;}
+    .navbox2 .navbox2_li_active a{color:#005aab;}
+
+    .border1{border-top:solid 1px #e5e5e5;}
+    .nav1a a{text-decoration: none;}
+    .nav1a:hover{border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5;background-color:#f2f2f2;}
+    .nav1a:hover .nav1a_title{ color:#005aab;}
+
+    .top_nav_box{width:691px;height:350px;background: #ffffff;position:absolute;top:60px;left:187px;border:solid 1px #e5e5e5;
+        border-left: 0;padding:8px 20px 10px 20px;overflow-y: scroll;overflow-x:hidden;}
+    .top_nav_scrollbox{width:690px;height:auto;/**/}
+    .top_nav_probox{padding:8px 0;line-height:26px;font-weight:normal;}
+    .top_nav_pro{height:26px;}
+    .pro_l{float:left;width:120px;padding-right:40px;text-align:right;}
+    .pro_l span{ padding-left:10px;}
+    .pro_r{float:left;}
+    .pro_r li{float:left;}
+    .pro_r li a{padding:0 8px;}
+
+
+    .nav1a>.scoll_bottom{ width:730px;height:20px;background:#ffffff;position:absolute;left:188px;top:410px;}
+    .nav1a>.scoll_right{ width:20px;height:366px;background:#ffffff;position:absolute;left:898px;top:62px;}
+    .nav1a>.scoll_linebox{width:20px;height:336px;background:#ffffff;position:absolute;left:898px;top:80px;border-left:1px solid #d9d9d9;}
+    .nav1a>.scoll_linebox>.scoll_line{width: 5px;height: 80px;top: 0;right:3px;background: #005aab;position: relative;}
+
+    .hei{height:52px;}
+</style>
+<meta charset="utf-8">
+<title>海尔导航栏</title>
+</head>
+
+<body style="background:yellowgreen;">
+<!--top-->
+<div class="top_box1">
+  <div class="top_box2" >
+    <img class="logo" src="images/logo.png">
+    <div class="nav1">
+        <div href="" class="nav1a"><a href="javascript:void(0)" class="nav1a_title">个人与家用产品</a>
+
+            <ul class="navbox2 navbox2_1">
+                <li class="border1" ><a href="javascript:void(0)">冰箱</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)">冷柜</a></li>
+                <li><a href="javascript:void(0)">洗衣机</a></li>
+                <li><a href="javascript:void(0)">空调</a></li>
+                <li><a href="javascript:void(0)">热水器</a></li>
+                <li><a href="javascript:void(0)">电视</a></li>
+                <li><a href="javascript:void(0)">厨电</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)">整体</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)">厨房</a></li>
+                <li><a href="javascript:void(0)">电脑</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)">手机</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)">数码</a></li>
+                <li><a href="javascript:void(0)">生活家电</a></li>
+                <li><a href="javascript:void(0)">数码产品</a></li>
+            </ul>
+
+            <div class="top_nav_box">
+                <div class="top_nav_scrollbox">
+
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro">
+                            <div class="pro_l"><a href="javascript:void(0)">冰箱专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">单门冰箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">两门冰箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">三门冰箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">对开门冰箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">多门冰箱</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="top_nav_pro">
+                            <div class="pro_l"><a href="javascript:void(0)">冷柜专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="">冷柜</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="top_nav_pro">
+                            <div class="pro_l"><a href="javascript:void(0)">冰吧酒柜专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="">冰吧酒柜</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro">
+                            <div class="pro_l"><a href="javascript:void(0)">洗衣机专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">滚筒洗衣机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">波轮洗衣机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">干衣机</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro hei">
+                            <div class="pro_l"><a href="javascript:void(0)">空调专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">壁挂式空调</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">柜式空调</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">家用中央空调</a></li>
+                                <li><a href="javascript:void(0)">空气魔方</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">空气净化器</a></li><br>
+                                <li><span>|</span><a href="javascript:void(0)">空气Mini</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">空气盒子</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">热水器专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">电热水器</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">燃气热水器</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">太阳能热水器</a></li>
+                                <li><a href="javascript:void(0)">采暖炉</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">空气能热水器</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">电视专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">4k高清智能电视</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">智能电视</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">网络电视</a></li>
+                                <li><a href="javascript:void(0)">流媒体电视</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">MOOKA</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">厨电专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">电烤箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">洗碗机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">消毒柜</a></li>
+                                <li><a href="javascript:void(0)">燃气灶</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">吸油烟机</a></li>
+                                <li><a href="javascript:void(0)">厨影</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">空气炸锅</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">整体厨房专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">整体衣柜</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">整体厨房</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">电脑专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">笔记本电脑</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">台式电脑</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">平板电脑</a></li>
+                                <li><a href="javascript:void(0)">一体电脑</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">显示器</a></li>
+                                <li><a href="javascript:void(0)">网络设备及外设</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">数码产品</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">数码相机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">数码摄像机</a></li>
+                                <li><a href="javascript:void(0)">行车记录仪</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">警用执法仪</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">手机专区</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">2G手机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">3G手机</a></li>
+                                <li><a href="javascript:void(0)">4G手机</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro hei">
+                            <div class="pro_l"><a href="javascript:void(0)">厨房小家电</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">搅拌机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">榨汁机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">电饭煲</a></li>
+                                <li><a href="javascript:void(0)">电压力锅</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">微波炉</a></li>
+                                <li><a href="javascript:void(0)">电磁炉</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">咖啡机</a></li>
+                                <li><a href="javascript:void(0)">豆浆机</a></li><br>
+                                <li><span>|</span><a href="javascript:void(0)">电水壶</a></li>
+                                <li><a href="javascript:void(0)">饮水机</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">环境类小家电</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">吸尘器</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">净水器</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">滤芯</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">个人类小家电</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">剃须刀</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">电熨斗</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">挂烫机</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">母婴小家电</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">多维哺食搅拌机</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">多组合蒸汽消毒锅</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">家庭医疗</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">按摩器</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">制氧机</a></li>
+                                <li><a href="javascript:void(0)">心电检测仪</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">电子体温计</a></li>
+                                <li><a href="javascript:void(0)">电子血压计</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="top_nav_probox">
+
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">无线电器</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">家用厨电</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">个人应用</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">公共服务</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)"  class="top_pro_font">智慧家电</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">智能冰箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">智能空调</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">微酒酷</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">智能烤箱</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">智能洗衣机</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro ">
+                            <div class="pro_l"><a href="javascript:void(0)">智慧空气产品</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">空气魔方</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">空气盒子</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">空气Mini</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">车载净化器</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">智能甲醛监测仪</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">除味宝</a></li>
+                            </ul>
+                        </div>
+                        <div class="top_nav_pro hei">
+                            <div class="pro_l"><a href="javascript:void(0)">智慧居家产品</a><span>&gt;</span></div>
+                            <ul class="pro_r">
+                                <li><a href="javascript:void(0)">扫地机器人</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">蓝牙音响</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">智能插座</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">冰箱健康盒子</a></li>
+                                <li><span>|</span><a href="javascript:void(0)">菜多多水培种植箱</a></li><br>
+                                <li><span>|</span><a href="javascript:void(0)">智能洁身器</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scoll_bottom"></div>
+            <div class="scoll_right"></div>
+
+            <div class="scoll_linebox">
+                <div class="scoll_line"></div>
+            </div>
+
+
+        </div>
+        <div href="" class="nav1a"><a href="javascript:void(0)" class="nav1a_title">商用产品</a>
+            <ul class="navbox2 navbox2_2">
+                <li class="border1"><a href="javascript:void(0)">中央空调</a></li>
+                <li><a href="javascript:void(0)">商用冷柜</a></li>
+                <li><a href="javascript:void(0)">商用洗涤</a></li>
+                <li><a href="javascript:void(0)">商用电视</a></li>
+                <li><a href="javascript:void(0)">商用电脑</a></li>
+                <li><a href="javascript:void(0)">生物医疗</a></li>
+                <li><a href="javascript:void(0)">U-home</a></li>
+                <li><a href="javascript:void(0)">商用净水设备</a></li>
+            </ul>
+
+        </div>
+        <div href="" class="nav1a"><a href="javascript:void(0)" class="nav1a_title">服务与支持</a>
+            <ul class="navbox2 navbox2_3">
+                <li class="border1"><a href="javascript:void(0)" >按产品类别</a></li>
+                <li><a href="javascript:void(0)">按服务类别</a></li>
+            </ul>
+        </div>
+        <div href="" class="nav1a"><a href="javascript:void(0)" class="nav1a_title">社区</a></div>
+        <div href="" class="nav1a"><a href="javascript:void(0)" class="nav1a_title">购买</a>
+            <ul class="navbox2  navbox2_4">
+                <li class="border1"><a href="javascript:void(0)">海尔商城</a></li>
+                <li><a href="javascript:void(0)">海尔专卖店</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="nav2">
+        <div class="box01">登录 | 注册</div>
+        <div class="box02">
+            <img src="images/gouwuchen2.png">
+      </div>
+      <div class="box03">
+          <img src="images/santiao.png">
+          <span>导航</span>
+      </div>
+      <div class="box04">
+          <img src="images/search.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--banner1-->
+
+<script>
+    //顶部
+    $(".navbox2").css("display","none");
+    $('.top_nav_box').css("display","none");
+    $('.scoll_bottom').css("display","none");
+    $('.scoll_right').css("display","none");
+    $('.scoll_linebox').css("display","none");
+
+   //顶部二级下拉导航效果
+
+    $(".nav1a:eq(0)").mouseenter(function(){
+        $(".navbox2_1").css("display","block")
+        $('.top_nav_box').css("display","block");
+        $('.scoll_bottom').css("display","block");
+        $('.scoll_right').css("display","block");
+        $('.scoll_linebox').css("display","block");
+
+    }).mouseleave(function(){
+        $(".navbox2_1").css("display","none")
+        $('.top_nav_box').css("display","none");
+        $('.scoll_bottom').css("display","none");
+        $('.scoll_right').css("display","none");
+        $('.scoll_linebox').css("display","none");
+    })
+    $(".nav1a:eq(1)").mouseenter(function(){
+        $(".navbox2_2").css("display","block")
+    }).mouseleave(function(){
+        $(".navbox2_2").css("display","none")
+    })
+    $(".nav1a:eq(2)").mouseenter(function(){
+        $(".navbox2_3").css("display","block")
+    }).mouseleave(function(){
+        $(".navbox2_3").css("display","none")
+    })
+    $(".nav1a:eq(4)").mouseenter(function(){
+        $(".navbox2_4").css("display","block")
+    }).mouseleave(function(){
+        $(".navbox2_4").css("display","none")
+    })
+
+
+    $('.navbox2 li').mouseenter(function (){
+        $('.navbox2 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+    }).mouseleave(function () {
+        $(this).removeClass('navbox2_li_active');
+    })
+
+
+    //顶部三级下拉导航效果
+
+    $('.navbox2_1 li:eq(0)').mouseenter(function () {     //当鼠标经过二级导航栏1的时候
+        $('.top_nav_box').scrollTop(0);                    //滚动框的滚动距离为0
+        $('.top_nav_probox').find('a').css('color','#999999');          //滚动框内的三级导航导航栏颜色先全部还原为灰色
+        $('.top_nav_probox').find('span').css('color','#999999');          //滚动框内的三级导航导航栏颜色先全部还原为灰色
+        $('.top_nav_probox:eq(0)').find('a').css('color','#005aab');      //滚动框内的相对应得三级导航导航栏颜色高亮显示
+        $('.top_nav_probox:eq(0)').find('span').css('color','#005aab');      //滚动框内的相对应得三级导航导航栏颜色高亮显示
+        $('.scoll_line').css('top','0');          //设置相对应的右边滚动线条的滚动距离，此时滚动线条的滚动距离为0
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(1)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(94);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(1)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(1)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','32px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+
+    });
+
+    $('.navbox2_1 li:eq(2)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(136);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(2)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(2)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','64px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(3)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(202);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(3)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(3)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','96px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(4)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(246);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(4)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(4)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','128px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(5)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(286);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(5)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(5)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','160px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(6)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(358);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(6)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(6)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','192px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(7)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(420);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(7)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(7)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','224px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $('.navbox2_1 li:eq(8)').mouseenter(function () {
+        $('.top_nav_box').scrollTop(420);
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox:eq(8)').find('a').css('color','#005aab');
+        $('.top_nav_probox:eq(8)').find('span').css('color','#005aab');
+        $('.scoll_line').css('top','256px');
+        $('.navbox2_1 li').removeClass('navbox2_li_active');
+        $(this).addClass('navbox2_li_active');
+
+    });
+
+    $(".top_nav_probox").mouseenter(function () {
+        $(this).find('a').css('color','#005aab');
+        $(this).find('span').css('color','#005aab');
+    }).mouseleave(function () {
+        $(this).find('a').css('color','#999999');
+        $(this).find('span').css('color','#999999');
+    })
+
+    $(".top_nav_probox a").mouseenter(function () {
+        $(this).parents('.top_nav_pro').children('a').css('color','#005aab');
+        $(this).parents('.top_nav_pro').children('span').css('color','#005aab');
+        $(this).css('color','#32beff');
+    }).mouseleave(function () {
+        $(this).css('color','#005aab');
+    })
+
+
+
+//   滚动事件
+    $('.top_nav_box').scroll( function() {
+        var  scTopmax=418;
+        var  lineStep=32;
+        var  nowTop=$('.top_nav_box').scrollTop();
+        var  navNum=9;
+        var aa =Math.ceil( nowTop/scTopmax*navNum)-1;
+        if(aa<0){aa=0};
+        var b=aa*lineStep+'px';
+        $('.navbox2_1 li').removeClass('navbox2_li_active').eq(aa).addClass('navbox2_li_active');
+        $('.scoll_line').css('top',b);
+
+        $('.top_nav_probox').find('a').css('color','#999999');
+        $('.top_nav_probox').find('span').css('color','#999999');
+        $('.top_nav_probox').eq(aa).find('a').css('color','#005aab');
+        $('.top_nav_probox').eq(aa).find('span').css('color','#005aab');
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+

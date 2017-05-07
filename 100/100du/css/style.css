@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset 重置 */
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+body { font-size:12px; font-family:"微软雅黑"; }
+
+
+/* public 公共样式 */
+.clear{zoom:1}        /* IE系列*/
+.clear:after{ content:''; display:block; clear:both;}        /* 标准浏览器*/
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*//////////// public渐变 */
+.gradient { 
+background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
+background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
+background:-ms-linear-gradient(top, #FFFFFF, #f8f8f8);
+background:linear-gradient(top, #FFFFFF, #f8f8f8);
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
++background:#f9f9f9;
+}
+
+
+/* layout 布局  */
+
+/* 样式精简  */
+#header,#nav,.content{width:960px;  margin:0 auto;}
+#search,.section,.side_ad,.side_section,#footer{ border:1px solid #bdbdbd; border-radius:6px;}
+.section,.options,.main_ad,.side_ad,.side_section{margin-bottom:10px;}
+
+
+body { margin-bottom:30px;}
+#header{ height:30px;  border-radius:0 0 6px 6px;}
+
+#nav{height:100px; background:#FF3;}
+
+#search{width:958px;height:118px;margin:0 auto 10px; }
+
+
+.main{width:710px;}
+.section{ width:318px; padding:0 15px;height:200px;/*33333*/ }
+.options{width:318px;padding:0 15px; height:200px;/*33333*/ background:#FFC;/*33333*/ }
+.main_ad{border-radius:6px; overflow:hidden;}
+
+.side{width:240px;border-radius:6px;}
+.side_ad{ overflow:hidden;}
+.side_section{padding:0 12px;height:100px;/*33333*/}
+
+#footer{width:958px; height:78px;margin:0 auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
