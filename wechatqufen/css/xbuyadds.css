@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+.xmain{ position:absolute; left:0; top:0rem; bottom:0rem;width:100%;overflow:auto; background:#f5f5f5;}
+
+/*新增地址板块*/
+#xtit{position:relative;border-top:0.08rem solid #f5f5f5; background:#fff;}
+#xtit a:nth-of-type(1){padding-left:0.12rem; display:block; height:0.5rem; line-height:0.5rem;color:#434343;}
+#xtit a:nth-of-type(2){width:0.1rem;height:0.14rem; position:absolute; right:0.12rem; top:50%; margin-top:-0.07rem; background:url(../images/pic16031103.png) no-repeat; background-size:0.07rem ;}
+
+
+
+/*地址板块*/
+
+
+#xadds_box{}
+
+
+.xtit{ height:0.4rem; line-height:0.4rem; padding-left:0.12rem;color:#9a9a9a;}
+
+
+/*详细地址板块*/
+#xadds_box{ margin-bottom:0.5rem;}
+.xadd{ padding-top:0.1rem;background:#fff; }
+.xaddress{position:relative; margin:0 0.12rem;}
+.xline{border-bottom:1px solid #d2d2d2;box-sizing:border-box;-webkit-box-sizing:border-box;   }
+.xadd li:nth-of-type(1){padding-bottom:0.04rem;font-size:0.15rem;line-height:0.24rem;color:#434343; }
+.xadd li:nth-of-type(2){width:2.40rem;line-height:0.2rem;font-size:0.13rem;overflow: hidden;white-space: nowrap;
+text-overflow: ellipsis;color:#434343; clear:both;padding-bottom:0.12rem;}
+.xadd a:nth-of-type(1){width:0.20rem;height:0.16rem; position:absolute; right:0.08rem; top:50%; margin-top:-0.1rem;
+background:url(../images/pic16031501.png) no-repeat;background-size:100% ;}
+.xadd a:nth-of-type(2),.xadd a:nth-of-type(3){position:absolute; right:0.02rem; top:50%;color:#ff6100; border:1px solid #ff6100;
+ padding:0.004rem 0.02rem; font-size:0.12rem;}
+.xadd a:nth-of-type(2){ margin-top:-0.27rem;}
+.xadd a:nth-of-type(3){margin-top:0rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

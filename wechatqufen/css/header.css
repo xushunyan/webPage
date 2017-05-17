@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+body,p,dl,dd,ul,ol,form,input,textarea,th,td,select{ margin:0;padding:0;font-size:0.15rem;font-family:"微软雅黑";}
+a{ text-decoration:none;}
+a,button,input{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; }/* For some Androids */
+h1,h2,h3,h4,h5,h6{ margin:0; font-weight:normal;}
+li{ list-style:none; }
+input{ outline:none;}
+
+
+.hide{ display:none;}
+
+/*页面主体*/
+#xpage1{width:100%;height:100%; position:absolute;left:0;top:0;overflow:hidden;}
+
+
+
+
+/*页脚模块*/
+#footer{height:0.5rem;position:absolute;left:0;bottom:0; width:100%;background:#f7f7f8; line-height:0.5rem;font-size:0.14rem;}
+.xbtnf{color:#929292;float:left; width:0.75rem; text-align:center;  line-height:0.1rem;}
+.xbtnf div{ width:0.2rem; height:0.2rem;overflow:hidden; display:inline-block; margin:0.08rem auto 0.04rem;}
+.xbtnf .xfimg1{ background:url(../images/pic16030801.png) no-repeat -0.2rem -0.01rem ; background-size:200% auto;}
+.xbtnf .xfimg2{ background:url(../images/pic16030802.png) no-repeat -0.2rem -0.01rem ; background-size:200% auto;}
+.xbtnf .xfimg3{ background:url(../images/pic16030803.png) no-repeat -0.2rem -0.01rem ; background-size:200% auto;}
+.xbtnf .xfimg4{ background:url(../images/pic16030804.png) no-repeat -0.2rem -0.01rem ; background-size:200% auto;}
+.xbtnf p{font-size:0.10rem;line-height:0.11rem;}
+.xbtnf .xfcur{ background-position:0 0;}
+.xbtnf .xfont{color:#ff6100;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

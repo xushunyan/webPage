@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">  
+<meta name="viewport" content="width=device-width,user-scalable=no,target-densitydpi=medium-dpi"/>
+<meta content="telephone=no" name="format-detection">
+
+<meta name="keywords" content="手机购物,手机分期,趣分趣分,分期付款,大学生分期,分期购物,0元首付,大学生购物,大学生商城"/>
+<meta name="description" content="趣分趣分——一家有趣的大学生分期购物网站，为大学生提供手机电脑、美妆潮服、运动旅游、宠物以及微整形等多方面的在线分期购物服务，零首付、低月供，优惠多多！"/>
+
+<link charset="utf-8" href="css/header.css" rel="stylesheet">
+<link charset="utf-8" href="css/xbuynav.css" rel="stylesheet">
+<link charset="utf-8" href="css/xbuygo.css" rel="stylesheet">
+
+<script src="js/jquery-2.2.1.min.js"  type="text/jscript"> </script>
+<script src="js/hhSwipe.js"></script>
+
+<title>趣分趣分触屏版</title>
+
+<script>
+document.getElementsByTagName('html')[0].style.fontSize=document.documentElement.clientWidth/3+'px';
+</script>
+
+</head>
+
+<body>
+
+<article class="xpage" id="xpage2"> 
+<!--页眉模块-->
+<header>
+   <a href="javascript:;" class="xbtn"><img src="images/pic16030402.png"></a> 
+   趣分趣分
+   <a href="javascript:;" class="xbtn"><img src="images/pic16030401.png"></a>
+</header>
+
+<!--内容模块-->
+<div  class="xmian">
+
+<!--banner模块-->
+<section class="scroll relative">
+    <div class="scroll_box" id="scroll_img">
+        <ul class="scroll_wrap">
+            <li><a href="#"><img  src="images/ban2.jpg"/></a></li>
+            <li><a href="#"><img  src="images/ban2.jpg"/></a></li>
+            <li><a href="#"><img  src="images/ban2.jpg"/></a></li>
+            <li><a href="#"><img  src="images/ban2.jpg"/></a></li>
+        </ul>
+    </div>
+    <ul class="scroll_position" id='scroll_position'>
+        <li class="on"><a href="javascript:void(0);">1</a></li>
+        <li><a href="javascript:void(0);">2</a></li>
+        <li><a href="javascript:void(0);">3</a></li>
+        <li><a href="javascript:void(0);">3</a></li>
+    </ul>
+</section>
+
+
+
+<!--标题模块-->
+<section id="xtit" >
+    <ul>乔丹/Air Jordan 1.5 Chicago The Return 芝加哥 公牛 768861-601</ul>
+    <ul>
+        <li>¥ 4,678.00</li>
+        <li>有货</li>
+    </ul>
+</section>
+
+
+
+<!--码数模块-->
+<section id="xperiod" >
+    <div class="xpe_div">颜色</div>
+    <ul>
+        <li class="xp_li1 xpli_cur">红色</li>
+        <li class="xp_li1">蓝色</li>
+        <li class="xp_li1">灰色</li>
+        <li class="xp_li1">白色</li>
+        <li style="clear:both;"></li>
+    </ul>
+    <div class="xpe_div">鞋码</div>
+    <ul>
+        <li class="xp_li2 xpli_cur">35</li>
+        <li class="xp_li2">36</li>
+        <li class="xp_li2">37</li>
+        <li class="xp_li2">38</li>
+        <li class="xp_li2">39</li>
+        <li class="xp_li2">40</li>
+        <li style="clear:both;"></li>
+    </ul>
+    <div class="xpe_div">分期</div>
+    <ul>
+        <li class="xp_li xpli_cur">¥ 229.05 ×3期</li>
+        <li class="xp_li">¥ 229.05 ×6期</li>
+        <li class="xp_li">¥ 229.05 ×9期</li>
+        <li class="xp_li">¥ 229.05 ×18期</li>
+        <li class="xp_li">¥ 229.05 ×24期</li>
+        <li style="clear:both;"></li>
+    </ul>
+</section>
+
+
+
+
+<!--商品模块-->
+<section class="xintro">
+    <div class="xintro2">商品介绍</div>
+    <a href="javascript:;"></a>
+</section>
+
+<a href="javascript:;" class="xbtn11">立即购买</a>
+
+    
+<!--内容模块-->   
+    
+</div>
+
+</article>
+
+<script>
+	$('.xbtnf:eq(2)').children('div').addClass('xfcur');
+	$('.xbtnf:eq(2)').children('p').addClass('xfont');
+</script>
+<!--banner模块-->
+<script>
+var slider = Swipe(document.getElementById('scroll_img'), {
+	auto: 3000,
+	continuous: true,
+	callback: function(pos) {
+		var i = bullets.length;
+		while (i--) {
+			bullets[i].className = ' ';
+		}
+		bullets[pos].className = 'on';
+	}
+});
+var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+$(function(){
+	$('.scroll_position_bg').css({
+		width:$('#scroll_position').width()
+	});
+});
+</script>
+  
+<script>
+
+ $(".xp_li").touchend(function(){  
+  $(this).addClass("xpli_cur").siblings().removeClass("xpli_cur");
+ });
+ 
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
